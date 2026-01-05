@@ -3,146 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stylized HTML Page</title>
+    <title>Dungeons & Dragons</title>
+
     <style>
+        /* Reset */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
+        /* Page background */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background: linear-gradient(135deg, #eb6810 0%, #da0e0e 100%);
             min-height: 100vh;
-            padding: 20px;
-        }
-        
-        header {
-            background: white;
             padding: 30px;
+            color: #333;
+        }
+
+        /* Shared card style */
+        .card {
+            background: #fff;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin-bottom: 30px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
         }
-        
+
+        /* Header */
         header h1 {
+            font-size: 2.6em;
             color: #667eea;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            text-align: center;
         }
-        
-        p {
-            color: #555;
-            line-height: 1.6;
+
+        /* Headings */
+        h2 {
+            color: #444;
             margin-bottom: 15px;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-size: 1.6em;
+            border-left: 5px solid #667eea;
+            padding-left: 12px;
         }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 30px;
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        /* Paragraphs */
+        p {
+            line-height: 1.7;
+            color: #555;
         }
-        
-        th {
-            background: #667eea;
-            color: white;
-            padding: 15px;
-            text-align: left;
-            font-weight: 600;
+
+        /* Lists */
+        ol {
+            padding-left: 20px;
         }
-        
-        td {
+
+        li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+            background: #f7f7f7;
             padding: 12px 15px;
-            border-bottom: 1px solid #e0e0e0;
+            border-radius: 6px;
         }
-        
-        tr:hover {
-            background: #f5f5f5;
+
+        /* Divider */
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #667eea, transparent);
+            margin: 30px 0;
+        }
+
+        /* Link button */
+        a {
+            display: inline-block;
+            text-decoration: none;
+            background: #667eea;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        a:hover {
+            background: #5563c1;
+            transform: translateY(-2px);
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Page</h1>
+
+    <header class="card">
+        <h1>Dungeons & Dragons</h1>
     </header>
-    
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-    
-    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>Total</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Laptop</td>
-                <td>$999</td>
-                <td>2</td>
-                <td>$1,998</td>
-            </tr>
-            <tr>
-                <td>Mouse</td>
-                <td>$25</td>
-                <td>5</td>
-                <td>$125</td>
-            </tr>
-            <tr>
-                <td>Keyboard</td>
-                <td>$75</td>
-                <td>3</td>
-                <td>$225</td>
-            </tr>
-        </tbody>
-    </table>
-    
-    <table>
-        <thead>
-            <tr>
-                <th>Student</th>
-                <th>Math</th>
-                <th>Science</th>
-                <th>English</th>
-                <th>Average</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>John Doe</td>
-                <td>85</td>
-                <td>90</td>
-                <td>88</td>
-                <td>87.67</td>
-            </tr>
-            <tr>
-                <td>Jane Smith</td>
-                <td>92</td>
-                <td>95</td>
-                <td>91</td>
-                <td>92.67</td>
-            </tr>
-            <tr>
-                <td>Bob Johnson</td>
-                <td>78</td>
-                <td>82</td>
-                <td>80</td>
-                <td>80</td>
-            </tr>
-        </tbody>
-    </table>
+
+    <section class="card">
+        <p>
+            DnD (Dungeons & Dragons) je stolní hra na hrdiny (RPG – role-playing game),
+            ve které hráči společně vyprávějí příběh ve fantasy světě plném dobrodružství,
+            magie, monster a hrdinů.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Jak DnD funguje</h2>
+        <ol>
+            <li>👥 Hráči si vytvoří postavy (např. válečník, kouzelník, zloděj).</li>
+            <li>🎲 Jeden hráč je Pán jeskyně (Dungeon Master, DM).</li>
+            <li>📜 Hráči popisují, co jejich postavy dělají.</li>
+            <li>🎲 Akce se vyhodnocují pomocí kostek (nejčastěji d20).</li>
+        </ol>
+    </section>
+
+    <section class="card">
+        <h2>Co je cílem hry</h2>
+        <ol>
+            <li>Nejde o výhru, ale o prožitek a společný příběh.</li>
+            <li>Styl hry si každá skupina přizpůsobí podle sebe.</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <a href="classes.html">Hratelná povolání DnD</a>
+
 </body>
 </html>
