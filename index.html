@@ -4,93 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dungeons & Dragons</title>
-
-    <style>
-        /* Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Page background */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #eb6810 0%, #da0e0e 100%);
-            min-height: 100vh;
-            padding: 30px;
-            color: #333;
-        }
-
-        /* Shared card style */
-        .card {
-            background: #fff;
-            border-radius: 10px;
-            padding: 25px;
-            margin-bottom: 25px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
-        }
-
-        /* Header */
-        header h1 {
-            font-size: 2.6em;
-            color: #667eea;
-            text-align: center;
-        }
-
-        /* Headings */
-        h2 {
-            color: #444;
-            margin-bottom: 15px;
-            font-size: 1.6em;
-            border-left: 5px solid #667eea;
-            padding-left: 12px;
-        }
-
-        /* Paragraphs */
-        p {
-            line-height: 1.7;
-            color: #555;
-        }
-
-        /* Lists */
-        ol {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 12px;
-            line-height: 1.6;
-            background: #f7f7f7;
-            padding: 12px 15px;
-            border-radius: 6px;
-        }
-
-        /* Divider */
-        hr {
-            border: none;
-            height: 2px;
-            background: linear-gradient(to right, #667eea, transparent);
-            margin: 30px 0;
-        }
-
-        /* Link button */
-        a {
-            display: inline-block;
-            text-decoration: none;
-            background: #667eea;
-            color: #fff;
-            padding: 12px 20px;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: background 0.3s ease, transform 0.2s ease;
-        }
-
-        a:hover {
-            background: #5563c1;
-            transform: translateY(-2px);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -124,9 +38,15 @@
         </ol>
     </section>
 
+    <section class="card">
+        <h2>Odkaz</h2>
+        <a href="https://www.dndbeyond.com/en/essentials">Oficiální stránky Dungeons & Dragons</a>
+        <img src="https://images.seeklogo.com/logo-png/51/1/dungeons-dragons-5th-edition-logo-png_seeklogo-517840.png" alt="Dungeons & Dragons Logo" style="width:200px; display:block; margin-top:10px;">
+    </section>
+
     <hr>
 
-    <a href="classes.html">Hratelná povolání DnD</a>
+    <a style="margin-top: 25px;" href="classes.html">Hratelná povolání DnD</a>
 
 </body>
 </html>
