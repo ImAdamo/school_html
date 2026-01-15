@@ -1,0 +1,88 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f2f2f2;
+}
+
+/* Calculator container */
+body {
+    display: grid;
+    grid-template-columns: repeat(5, 70px);
+    grid-template-rows: 70px repeat(5, 70px);
+    gap: 10px;
+    padding: 20px;
+    background: #e6e6e6;
+    border-radius: 12px;
+}
+
+/* Display */
+#calc_window {
+    grid-column: 1 / 6;
+    background: #1e1e1e;
+    color: white;
+    font-size: 1.6rem;
+    text-align: right;
+    padding: 14px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+/* Buttons */
+button {
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    height: 100%;
+}
+
+/* Numbers */
+.number {
+    background: #ffffff;
+}
+
+/* Operators */
+.operator {
+    background: #ff9f0a;
+    color: white;
+}
+
+/* Special */
+.special {
+    background: #d9534f;
+    color: white;
+}
+
+/* Equals */
+#result {
+    background: #5cb85c;
+    grid-column: span 2;
+}
+
+/* Layout fixes */
+#zero {
+    grid-column: span 3;
+}
+
+#clear {
+    grid-column: span 2;
+}
+
+/* Interaction */
+button:hover {
+    filter: brightness(0.95);
+}
+
+button:active {
+    transform: scale(0.96);
+}
